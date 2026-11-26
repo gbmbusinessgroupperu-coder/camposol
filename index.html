@@ -187,16 +187,16 @@ run(){for(const n in draws){document.querySelectorAll('[data-draw="'+n+'"]').for
       </div>
     </div>
     <div class="cp-panel" id="panel-ec2">
-      <h2>Indicadores propuestos en el EC2</h2>
-      <p class="cp-note">Son los siete indicadores del avance EC2. El tablero mide tres en esta fase y los otros cuatro entran en la fase 2 del piloto. Las vistas responden a las tres tensiones del EC1 y EC2: Operación (coordinación campo–planta), Cadena de frío (IoT) y Clima. Ejemplo del EC2: se estimaron 20 t y se cosecharon 27 t; 7 t llegaron sin transporte ni recepción previstos.</p>
+      <h2>Indicadores de producción, calidad y logística</h2>
+      <p class="cp-note">Son siete indicadores de gestión. El tablero mide tres en esta fase y los otros cuatro entran en la fase 2 del piloto. Las vistas responden a tres tensiones: Operación (coordinación campo–planta), Cadena de frío (IoT) y Clima.</p>
       <div class="cp-twrap">
         <table class="cp-table">
-          <thead><tr><th>Indicador del EC2</th><th>Qué mide</th><th>En el tablero</th><th class="r">Semana 47</th></tr></thead>
+          <thead><tr><th>Indicador</th><th>Qué mide</th><th>En el tablero</th><th class="r">Semana 47</th></tr></thead>
           <tbody>
             <tr><td>Cumplimiento de producción</td><td>Cosechado / estimado</td><td><b>Medido</b> · Operación</td><td class="r"><span data-draw="k_cumpl" data-source="kpi_operacion" data-field="cumplimiento_pct" data-row="0">—</span></td></tr>
             <tr><td>Porcentaje de merma</td><td>Fruta perdida en el proceso</td><td><b>Medido</b> · Detalle por fundo</td><td class="r">3,0 a 3,8 %</td></tr>
-            <tr><td>Cumplimiento de despachos</td><td>Envíos dentro de la fecha programada</td><td>Valor ilustrativo del EC2</td><td class="r">94 %</td></tr>
-            <tr><td>Tiempo de transporte</td><td>Días del despacho a la entrega</td><td>Fase 2 · valor ilustrativo del EC2</td><td class="r">22 días</td></tr>
+            <tr><td>Cumplimiento de despachos</td><td>Envíos dentro de la fecha programada</td><td>Valor ilustrativo</td><td class="r">94 %</td></tr>
+            <tr><td>Tiempo de transporte</td><td>Días del despacho a la entrega</td><td>Fase 2 · valor ilustrativo</td><td class="r">22 días</td></tr>
             <tr><td>Rendimiento de procesamiento</td><td>Fruta procesada / recibida</td><td>Fase 2</td><td class="r">—</td></tr>
             <tr><td>Nivel de inventario</td><td>Existencias de producto e insumos</td><td>Fase 2</td><td class="r">—</td></tr>
             <tr><td>Productos conformes</td><td>Fruta que cumple calidad / recibida</td><td>Fase 2</td><td class="r">—</td></tr>
@@ -326,7 +326,7 @@ run(){for(const n in draws){document.querySelectorAll('[data-draw="'+n+'"]').for
       <li><b>Lotes a pre-frío a tiempo:</b> lotes que ingresan a pre-frío en ≤ <span data-draw="u" data-u="horasPrefrio">—</span> desde la cosecha, sobre el total de lotes.</li>
       <li><b>Anomalía térmica:</b> Tmáx observada menos la normal histórica del mismo día, promedio de 7 días.</li>
       <li><b>Merma:</b> kg descartados / kg recibidos, por fundo.</li>
-      <li><b>Cumplimiento de despachos:</b> contenedores despachados en fecha / programados (valor ilustrativo del EC2; se simula en la fase 2).</li>
+      <li><b>Cumplimiento de despachos:</b> contenedores despachados en fecha / programados (valor ilustrativo; se simula en la fase 2).</li>
       <li><b>Prioridad alta:</b> desvío de un fundo mayor a ±<span data-draw="u" data-u="desvioAlto">—</span>, un sensor con <span data-draw="u" data-u="minutosAlto">—</span> o más fuera de rango, una planta con uso de capacidad sobre <span data-draw="u" data-u="usoAlto">—</span>, un lote con más de <span data-draw="u" data-u="horasAlto">—</span> a pre-frío o un pronóstico de anomalía desde <span data-draw="u" data-u="anomaliaAlta">—</span>.</li>
     </ul>
   </details>
